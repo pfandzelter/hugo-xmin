@@ -5,22 +5,11 @@ body {
   line-height: 1.5;
 }
 
+body a {
+    color: #0000e9;
+  }
+
 /* header and footer areas */
-.menu {
-  padding: 0;
-}
-.menu li {
-  display: inline-block;
-}
-.article-meta,
-.menu a {
-  text-decoration: none;
-  background: #eee;
-  padding: 5px;
-  border-radius: 5px;
-}
-.menu,
-.article-meta,
 footer {
   text-align: center;
 }
@@ -85,3 +74,14 @@ tr:nth-child(even) {
 ul {
   list-style-type: none;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+
+    body a {
+      color: #809fff;
+    }
+  }
