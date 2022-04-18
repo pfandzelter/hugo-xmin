@@ -1,0 +1,8 @@
+{{ range (where .Site.RegularPages "Section" "!=" "") }}
+<p>
+  {{ delimit .Params.Authors ", " }} <b>{{ .Title }}</b> {{ .Params.Publication
+  }} {{ .Params.Date.Year }} {{ if .Params.url_pdf }}
+  <a href="{{ .Params.url_pdf }}">PDF</a> {{ end }} {{ with .Resources.GetMatch
+  "cite.bib" }} <a href="{{ .Permalink }}">Cite</a> {{ end }}
+</p>
+{{ end }}
