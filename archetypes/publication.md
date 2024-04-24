@@ -7,6 +7,8 @@ authors:
 
 date: "2018-12-11T00:00:00Z"
 
+award: ""
+
 # Publication name and optional abbreviated publication name.
 publication: Proceedings of the 1st Conference on Made-Up Stuff
 
